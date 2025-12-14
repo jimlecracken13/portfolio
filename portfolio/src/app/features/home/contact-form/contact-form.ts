@@ -8,4 +8,20 @@ import { Component } from '@angular/core';
 })
 export class ContactForm {
 
+  //email
+  email= 'jimlecracken13@gmail.com'
+
+  //linkedin
+  linkedin = ''
+
+  //github
+  github = 'https://github.com/jimlecracken13'
+
+  //button titre
+  telecharger = 'Techarger mon cv'
+
+  //button envoyer
+  envoyer = 'Envoyer'
+
+
 }

@@ -1,1 +1,16 @@
-<p>projects-preview works!</p>
+<section id="mesprojets">
+    <h3>Mes Projets</h3>
+    <div class="projects-preview">
+        @for(projet of projets; track projet){
+
+        
+        <app-projet-card
+            image="projet.image"
+            nom="projet.nom"
+            description="projet.description"
+            ></app-projet-card>}
+            @empty{
+                <p>Aucun projet enregistré</p>
+            }
+    </div>
+</section>

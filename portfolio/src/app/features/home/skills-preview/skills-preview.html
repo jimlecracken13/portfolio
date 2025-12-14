@@ -1,1 +1,17 @@
-<p>skills-preview works!</p>
+<section id="mescompetences">
+    <h3>Mes Compétences</h3>
+    <div class="skills-preview">
+        @for(skill of skills; track skill){
+
+              <app-skill-card
+            titre="skill.titre"
+            niveau="skill.niveau"
+            [valeur]=skill.valeur
+            ></app-skill-card>
+
+        }@empty{
+            <p>Aucunes compétences enregistrées</p>
+        }
+      
+    </div>
+</section>
