@@ -4,8 +4,9 @@
         @for(skill of skills; track skill){
 
               <app-skill-card
-            titre="skill.titre"
-            niveau="skill.niveau"
+            [titre]="skill.titre"
+            [niveau]="skill.niveau"
+            [technologies]="skill.technologies"
             [valeur]=skill.valeur
             ></app-skill-card>
 

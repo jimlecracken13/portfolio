@@ -1,0 +1,20 @@
+
+    <h2 mat-dialog-title>{{data.nom}}</h2>
+
+    <mat-dialog-content>
+        <img [src]="data.image" alt="image">
+        <h5>Role:</h5>
+        <p>{{data.role}}</p>
+        <h5>Fonctionnalite:</h5>
+        <p>{{data.fonctionnalite}}</p>
+        <h5>Defi:</h5>
+        <p>{{data.defi}}</p>
+        <a href="{{data.lien_github}}" target="_blank" >
+            Lien github
+        </a>
+    </mat-dialog-content>
+
+    <mat-dialog-actions>
+        <button matButton mat-dialog-close>Fermer</button>
+    </mat-dialog-actions>
+

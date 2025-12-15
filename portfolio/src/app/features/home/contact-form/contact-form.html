@@ -2,17 +2,36 @@
     <h3>Contact</h3>
     <div class="contact-form-preview">
         <div class="contact-form">
+            <form (ngSubmit)="submitForm()">
+
+                <label>
+                    Nom
+                    <input type="text" [(ngModel)]="name" name="name" placeholder="Votre nom complet" required>
+                </label>
+
+                <label>
+                    
+                    Email
+                    <input type="email" [(ngModel)]="sender_email" name="email" placeholder="Votre email" required>
+                </label>
+
+                <label>
+                    Message
+                    <textarea [(ngModel)]="message" name="message" placeholder="Votre message" required></textarea>
+                </label>
+
+                <button type="submit">{{envoyer}}</button>
+
+            </form>
+
         </div>
-        <button>
-            {{envoyer}}
-        </button>
     </div>
     <div class="contact-links">
         Email: <a href="{{email}}" target="_blank">{{email}}</a>
         <a href="{{linkedin}}" target="_blank">linkedIn</a>
         <a href="{{github}}" target="_blank">Github</a>
-       <button>
-        {{telecharger}}
-       </button>
+        <button>
+            {{telecharger}}
+        </button>
     </div>
 </section>

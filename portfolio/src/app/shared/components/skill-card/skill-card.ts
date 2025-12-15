@@ -12,7 +12,7 @@ export class SkillCard {
   @Input() titre!: string;
   @Input() niveau!: string;
   //liste des images des compétences
-  @Input() icone!: string[]
+  @Input() technologies!: string[]
 
   //niveau de compétences
   @Input() valeur!: number;

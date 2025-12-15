@@ -1,5 +1,10 @@
 <div class="skill-card">
     <h4>{{titre}}</h4>
     <h6>{{niveau}}</h6>
+    @for(technologie of technologies; track technologie){
+        <img [src]="technologie" [alt]="technologie">
+    }@empty{
+        <p>Aucune technologie</p>
+    }
     <mat-progress-bar [value]="valeur"></mat-progress-bar>
 </div>

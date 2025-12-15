@@ -1,27 +1,37 @@
 import { Component } from '@angular/core';
-
+import {FormsModule} from '@angular/forms';
 @Component({
   selector: 'app-contact-form',
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './contact-form.html',
   styleUrl: './contact-form.css',
 })
 export class ContactForm {
 
+  name: String = ''
+  sender_email: String = ''
+  message: String = ''
+
   //email
-  email= 'jimlecracken13@gmail.com'
+  email: String = 'jimlecracken13@gmail.com'
 
   //linkedin
-  linkedin = ''
+  linkedin: String = ''
 
   //github
-  github = 'https://github.com/jimlecracken13'
+  github: String = 'https://github.com/jimlecracken13'
 
   //button titre
-  telecharger = 'Techarger mon cv'
+  telecharger: String = 'Techarger mon cv'
 
   //button envoyer
-  envoyer = 'Envoyer'
+  envoyer: String = 'Envoyer'
+
+  //methode pour submit pour soummettre le formulaire
+  submitForm() {
+    //appelle du service d'envoies d'email
+    console.log(this.name, this.sender_email, this.message)
+  }
 
 
 }

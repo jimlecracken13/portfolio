@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { SkillCard } from '../../../shared/components/skill-card/skill-card';
 
+
+
 @Component({
   selector: 'app-skills-preview',
   imports: [SkillCard],
@@ -9,12 +11,14 @@ import { SkillCard } from '../../../shared/components/skill-card/skill-card';
 })
 export class SkillsPreview {
 
+  constructor() { }
+
   //liste des skills
   skills: SkillCard[] = [
-    { titre: 'HTML', niveau: 'Avancé', icone: ['html'], valeur: 90 },
-    { titre: 'CSS', niveau: 'Avancé', icone: ['css'], valeur: 80 },
-    { titre: 'JavaScript', niveau: 'Intermédiaire', icone: ['javascript'], valeur: 70 },
-    { titre: 'Angular', niveau: 'Intermédiaire', icone: ['angular'], valeur: 60 },
+    { titre: 'HTML', niveau: 'Avancé', technologies: ['/assets/images/technologies/html.png'], valeur: 90 },
+    { titre: 'CSS', niveau: 'Avancé', technologies: ['/assets/images/technologies/css.png'], valeur: 80 },
+    { titre: 'JavaScript', niveau: 'Intermédiaire', technologies: ['/assets/images/technologies/javascript.png'], valeur: 70 },
+    { titre: 'Angular', niveau: 'Intermédiaire', technologies: ['/assets/images/technologies/angular.png'], valeur: 60 },
   ];
 
 }
