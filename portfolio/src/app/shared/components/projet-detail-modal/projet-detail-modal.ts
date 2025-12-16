@@ -3,6 +3,7 @@ import { MAT_DIALOG_DATA,
     MatDialogModule
  } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
+import { Projet } from '../../models/projet';
 @Component({
   selector: 'app-projet-detail-modal',
   imports: [MatButtonModule, MatDialogModule],
@@ -11,7 +12,7 @@ import { MatButtonModule } from '@angular/material/button';
 })
 export class ProjetDetailModal {
 
-  constructor(@Inject(MAT_DIALOG_DATA) public data: any) { }
+  constructor(@Inject(MAT_DIALOG_DATA) public data: {projet: Projet}) { }
 
 
 }

@@ -3,14 +3,7 @@
     <div class="projects-preview">
         @for(projet of projets; track projet){
         <app-projet-card
-            [image]="projet.image"
-            [nom]="projet.nom"
-            [description]="projet.description"
-            [technologies]="projet.technologies"
-            [defi]="projet.defi"
-            [fonctionnalite]="projet.fonctionnalite"
-            [role]="projet.role"
-            [lien]="projet.lien"
+            [projet]=projet
             ></app-projet-card>}
             @empty{
                 <p>Aucun projet enregistré</p>

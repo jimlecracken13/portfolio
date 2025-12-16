@@ -1,9 +1,9 @@
 <div class="projet-card">
-    <img [src]=image alt="Projet">
+    <img [src]=projet.image alt="Projet">
     <div class="projet-card-content">
-        <h4>{{nom}}</h4>
-        <p>{{description}}</p>
-        @for(technologie of technologies; track technologie) {
+        <h4>{{projet.nom}}</h4>
+        <p>{{projet.description}}</p>
+        @for(technologie of projet.technologies; track technologie) {
             <img [src]="technologie" alt="technologie">
         }@empty {
             <p>Aucune technologie</p>

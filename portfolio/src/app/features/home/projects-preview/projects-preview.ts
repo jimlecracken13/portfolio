@@ -19,7 +19,7 @@ export class ProjectsPreview {
     fonctionnalite: 'This is the first project',
     image: 'https://via.placeholder.com/300x200',
     lien: 'https://github.com/jimlecracken13',
-    technologies: ['/assets/images/angular.png', '/assets/images/typescript.png', '/assets/images/html.png', '/assets/images/css.png']
+    technologies: ['assets/images/angular.jpg', 'assets/images/typescript.jpg', 'assets/images/html.jpg', 'assets/images/css.jpg']
   },
   ];
 

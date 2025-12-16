@@ -1,15 +1,15 @@
 
-    <h2 mat-dialog-title>{{data.nom}}</h2>
+    <h2 mat-dialog-title>{{data.projet.nom}}</h2>
 
     <mat-dialog-content>
-        <img [src]="data.image" alt="image">
+        <img [src]="data.projet.image" alt="image">
         <h5>Role:</h5>
-        <p>{{data.role}}</p>
+        <p>{{data.projet.role}}</p>
         <h5>Fonctionnalite:</h5>
-        <p>{{data.fonctionnalite}}</p>
+        <p>{{data.projet.fonctionnalite}}</p>
         <h5>Defi:</h5>
-        <p>{{data.defi}}</p>
-        <a href="{{data.lien_github}}" target="_blank" >
+        <p>{{data.projet.defi}}</p>
+        <a href="{{data.projet.lien}}" target="_blank" >
             Lien github
         </a>
     </mat-dialog-content>
