@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-
+:root {
+    --primary-color: #F7931E;   /* Jaune/Orangé pour le bouton principal et le cercle */
+    --secondary-color: #EB600C; /* Orange plus foncé pour le fond principal */
+    --background-color: #F2F2E2; /* Couleur beige clair de la section suivante (pour la vague) */
+    --text-color-light: #FFFFFF; /* Texte blanc sur fond coloré */
+    --text-color-dark: #333333; /* Texte sombre principal */
+}
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

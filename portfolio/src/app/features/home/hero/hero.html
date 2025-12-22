@@ -1,24 +1,35 @@
-<section>
+<section class="hero-section">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
+        <div class="hero-grid"> 
+            
+            <div class="hero-col-image">
+                <div class="hero-image-wrapper">
+                    <img 
+                        src="assets/images/profile 1.jpg" 
+                        alt="Photo de profil de {{nom}} {{prenom}}" 
+                        class="profile-img">
+                </div>
+            </div>
+
+            <div class="hero-col-content">
                 <div class="hero-content">
+                    
                     <h1 class="hero-title">{{nom + ' ' + prenom}}</h1>
-                    <h3>{{titre}} , {{titre2}}</h3>
+                    <h2 class="hero-subtitle">{{titre}}</h2>
+                    <h3>{{titre2}}</h3>
                     <p class="hero-paragraph">{{description}}</p>
-                    <button>
-                        {{voirProjet}}
-                    </button>
-                    <button>
-                        {{contact}}
-                    </button>
+                    
+                    <div class="hero-actions">
+                        <a href="#projets" class="btn btn-primary">
+                            {{voirProjet}}
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            {{contact}}
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-12">
-                <div class="hero-image">
-                    <img src="assets/images/profile 1.jpg" alt="Profile Image">
-                </div>
-            </div>
+            
         </div>
     </div>
 </section>
